@@ -9,7 +9,7 @@ from fast_bitrix24 import Bitrix
 sms_api_key = os.environ['SMS_CODE']
 crm_phone = os.environ['CRM_PHONE']
 BITRIX_CODE = os.environ['BITRIX_CODE']
-BITRIX_URL = r'https://b24-mgttck.bitrix24.ru/rest/1/' + BITRIX_CODE
+BITRIX_URL = r'https://b24-57wnll.bitrix24.ru/rest/1/' + BITRIX_CODE
 endpoint = Bitrix(BITRIX_URL)
 app = Flask(__name__)
 
