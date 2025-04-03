@@ -11,6 +11,7 @@ crm_phone = os.environ['CRM_PHONE']
 BITRIX_CODE = os.environ['BITRIX_CODE']
 BITRIX_URL = r'https://b24-mgttck.bitrix24.ru/rest/1/' + BITRIX_CODE
 endpoint = Bitrix(BITRIX_URL)
+app = Flask(__name__)
 
 
 FIELD_NAME = 'UF_CRM_1742576602338'
