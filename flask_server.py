@@ -38,7 +38,8 @@ def get_contacts(number: str | None = None):
     result = []
     for tci in truncated_contact_items:
         current_contact = get_contact_by_ID(tci["ID"])
-        if number is not None and number not in current_contact['PHONE']: continue
+        phones = [p['VALUE'].strip('+') for p in current_contact['PHONE']]
+        if number is not None and number not in phones: continue
         result.append(current_contact)
     return result
 
